@@ -18,7 +18,7 @@ jobs:
         version: ${{ matrix.node_version }}
     - uses: chrislennon/action-aws-cli@v1.1
       # All commands after this point have access to the AWS CLI
-    - run: aws ssm get-parameter --name userPoolId-$NODE_CONFIG_ENV | jq -r ".Parameter.Value"
+    - run: aws ssm get-parameter --name stage | jq -r ".Parameter.Value"
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
