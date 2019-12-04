@@ -49,6 +49,9 @@ export default {
   */
   axios: {
   },
+  router: {
+    base: '/subdirectory/'
+  },
   /*
   ** Build configuration
   */
@@ -59,4 +62,4 @@ export default {
     extend (config, ctx) {
     }
   }
-}
+};
