@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        Niel
+        Niel hello world
       </h1>
       <h2 class="subtitle">
         Niel Nuxt.js project
